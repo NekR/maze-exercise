@@ -1,0 +1,102 @@
+.MessageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.Message {
+  background: rgba(255, 255, 255, 0.9);
+  height: 300px;
+  width: 500px;
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.ContentBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+.ItemBox {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.ItemTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: blue;
+}
+
+.ItemImageBox {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.ItemImage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 534px) {
+  .ContentBox {
+    padding: 30px 10px;
+  }
+
+  .MessageBox {
+    padding-top: 30px;
+  }
+
+  .ItemBox {
+    margin: 10px;
+  }
+
+  .ItemImageBox {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 394px) {
+  .ContentBox {
+    padding: 20px 5px;
+  }
+
+  .MessageBox {
+    padding-top: 20px;
+  }
+
+  .ItemBox {
+    margin: 10px 5px;
+  }
+
+  .ItemTitle {
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .ItemImageBox {
+    width: 120px;
+    height: 120px;
+  }
+}
